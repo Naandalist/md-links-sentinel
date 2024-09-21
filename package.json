@@ -1,0 +1,25 @@
+{
+  "name": "md-link-sentinel",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "build": "bun build ./index.ts --outdir ./dist",
+    "test": "bun test",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write '**/*.{ts,json,md}'",
+    "check-format": "prettier --check '**/*.{ts,json,md}'"
+  },
+  "author": "Listiananda Apriliawan",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.5.5",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint": "^9.11.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
